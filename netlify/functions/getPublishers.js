@@ -39,7 +39,7 @@ exports.handler = async (event, context) => {
       return {
         statusCode: 200,
         headers: {
-          'Access-Control-Allow-Origin': '', // Permitir todas las solicitudes de origen
+          'Access-Control-Allow-Origin': '*', // Permitir todas las solicitudes de origen
           'Access-Control-Allow-Headers': 'Content-Type',
         },
         body: JSON.stringify(publishers),
@@ -48,7 +48,7 @@ exports.handler = async (event, context) => {
       return {
         statusCode: 500,
         headers: {
-          'Access-Control-Allow-Origin': '', // Permitir todas las solicitudes de origen
+          'Access-Control-Allow-Origin': '*', // Permitir todas las solicitudes de origen
           'Access-Control-Allow-Headers': 'Content-Type',
         },
         body: JSON.stringify({ error: 'Failed to load publishers' }),
