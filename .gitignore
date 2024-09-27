@@ -6,3 +6,5 @@ dist/
 *.log
 # Environment variables
 .env
+.netlify
+ 
